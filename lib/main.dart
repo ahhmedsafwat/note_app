@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/screens/home_page.dart';
+import 'views/home_page.dart';
 
 void main(List<String> args) {
   runApp(const NoteApp());
@@ -14,7 +14,9 @@ class NoteApp extends StatelessWidget {
       routes: {HomePage.id: (context) => const HomePage()},
       initialRoute: 'HomePage',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+      ),
     );
   }
 }
