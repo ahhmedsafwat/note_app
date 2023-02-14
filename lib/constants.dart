@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
-Color mainColor = Colors.black;
+Color KTextColor = Colors.black;
 
-Color secondaryColor = Colors.black.withOpacity(0.5);
+Color KsecondaryTextColor = Colors.black.withOpacity(0.5);
+
+const KPrimaryColor = Color(0xff62fcd7);

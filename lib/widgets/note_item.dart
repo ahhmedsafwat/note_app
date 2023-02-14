@@ -22,7 +22,7 @@ class NoteItem extends StatelessWidget {
           title: Text(
             'Flutter Tips',
             style: TextStyle(
-              color: mainColor,
+              color: KTextColor,
               fontSize: 26,
             ),
           ),
@@ -31,7 +31,7 @@ class NoteItem extends StatelessWidget {
             child: Text(
               'Build your career with tharwt samy,',
               style: TextStyle(
-                color: secondaryColor,
+                color: KsecondaryTextColor,
                 fontSize: 18,
               ),
             ),
@@ -40,7 +40,7 @@ class NoteItem extends StatelessWidget {
               onPressed: () {},
               icon: Icon(
                 FontAwesomeIcons.trash,
-                color: mainColor,
+                color: KTextColor,
                 size: 26,
               )),
         ),
@@ -48,7 +48,7 @@ class NoteItem extends StatelessWidget {
           padding: const EdgeInsets.only(right: 24),
           child: Text(
             'May21 , 2023',
-            style: TextStyle(color: secondaryColor, fontSize: 14),
+            style: TextStyle(color: KsecondaryTextColor, fontSize: 14),
           ),
         )
       ]),
