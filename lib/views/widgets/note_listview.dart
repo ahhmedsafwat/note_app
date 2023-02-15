@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'note_item.dart';
 
 class NotesListView extends StatelessWidget {
