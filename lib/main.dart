@@ -25,11 +25,7 @@ class NoteApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => NoteCubit(),
       child: MaterialApp(
-        routes: {
-          HomeView.id: (context) => const HomeView(),
-          EditNote.id: (context) => const EditNote()
-        },
-        initialRoute: 'HomeView',
+        home: HomeView(),
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           brightness: Brightness.dark,
