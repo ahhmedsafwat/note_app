@@ -3,7 +3,7 @@ import "package:flutter_bloc/flutter_bloc.dart";
 import "package:note_app/cubit/add_note_cubit/add_note_cubit.dart";
 import "package:note_app/models/note_model.dart";
 
-import "custom_buttom.dart";
+import 'custom_button.dart';
 import "custom_text_field.dart";
 
 class AddNoteForm extends StatefulWidget {
@@ -51,7 +51,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           ),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
-              return CustomButtom(
+              return CustomButton(
                 isLoading: state is AddNoteLoading ? true : false,
                 onTap: () {
                   if (formKey.currentState!.validate()) {

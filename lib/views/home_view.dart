@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/views/widgets/notes_view_body.dart';
 
-import 'widgets/add_note_botton_sheet.dart';
+import 'widgets/add_note_button_sheet.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -12,6 +12,7 @@ class HomeView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
           onPressed: () {
             showModalBottomSheet(
+                isScrollControlled: true,
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(16),
